@@ -95,7 +95,7 @@ nav ul li a:hover::after{
 }
 .tab-titles{
     display: flex;
-    margin: 0 0px 15px;/*15(last) is neeche vala dist and 500(middle)is 1st ka diost from left*/
+    margin: 0 600px 15px;/*15(last) is neeche vala dist and 500(middle)is 1st ka diost from left*/
 }
 .tab-links{
     margin-right: 375px;    /* distance between ek dusre */
@@ -119,7 +119,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 1px 0px;/*(middle wala change)*/
+    margin: 1px 600px;/*(middle wala change)*/
 }
 .tab-contents ul li span{
     color: #c53753;
