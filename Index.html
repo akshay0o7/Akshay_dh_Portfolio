@@ -1,0 +1,135 @@
+﻿<IDOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatib1e" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=l.ø" />
+      <!--<tit1e>VFX Portfolio</tit1e>-->
+      <link rel="stylesheet" href="Style.css" />
+    </head>
+    <body>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <img src="Images/logo.png" class="logo" />
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            <p><span>Game developer</span>/<samp>VFX Artist</samp></p>
+            <h1>Hi, I am <span>Akshay D H</span></h1>
+          </div>
+        </div>
+      </div>
+      <!-- -------about-------->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="Images/About_me.png" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">
+                Hey, this is me i do this and that but this is just a trial no
+                matter how long i write idk what will happen
+                sfhaujshfjhfidjfhvjsfskdjfgdshfvlsjfvds;hkfjvdsghkfvsg;vfdsughfvhdsgfv;wsavfwhsgfvsgkjfvhj
+              </h1>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Unreal Engine</span><br />VFX artist and Level
+                    designing
+                  </li>
+                  <li>
+                    <span>After Effects</span><br />Effects creation and
+                    animation
+                  </li>
+                  <li>
+                    <span>Blender</span><br />Character/assets modeling and
+                    animation
+                  </li>
+                  <li>
+                    <span>DaVinci</span><br />Post production color gamet
+                    editing
+                  </li>
+                  <li>
+                    <span>Maya and Houdini</span><br />Animation and effects
+                    creation
+                  </li>
+                  <li><span>Solidworks</span><br />3D modeling</li>
+                  <li>
+                    <span>ABB RobotStudio and Matlab</span><br />Robot
+                    simulation upto 4DOF
+                  </li>
+                  <li><span>CNC</span><br />Machinary Automation</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Skolar </span><samp>Aug-Sept'23</samp><br />Intern in
+                    Buisness development department for 2 months
+                  </li>
+                  <li>
+                    <span>Electro Eco Mobility </span><samp>oct-nov'23</samp
+                    ><br />Worked here for a month as intern in assembly,
+                    quality check and service in this company
+                  </li>
+                  <li>
+                    <span>Akiyam Solution </span><samp>July</samp
+                    ><br />Currently Working here since 5months as an intern in
+                    VFX department for effects, lighting, animation and camera
+                    shots creation
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Lions English School </span><samp>2021</samp
+                    ><br />Higher Secondar Education
+                  </li>
+                  <li>
+                    <span>VIT Chennai </span><samp>2021-2025</samp><br />Btech
+                    in Mechatronics and Automation
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--    ---------------- conditions------------------  -->
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of ttabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+    </body>
+  </html></IDOCTYPE
+>
