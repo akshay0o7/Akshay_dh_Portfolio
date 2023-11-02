@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css" />
+    <script src="https://kit.fontawesome.com/ce7fe2870a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -12,11 +13,14 @@
         <nav>
           <img src="Images/logo.png" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Projects">Project</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p><span>Game developer</span>/<span>VFX Artist</span></p>
@@ -33,8 +37,9 @@
           </div>
           <div class="about-col-2 sub-title">
             Hey, this is me i do this and that but this is just a trial no
-            matter how long i write idk what will happen
-            sfhaujshfjhfidjfhvjsfsk djfgdshfvlsjfvds;hkf jvdsghkfvsg;vfdsugh fvhdsgfv;wsavfwhsgfvsgkjfvhj
+            matter how long i write idk what will happen sfhaujshfjhfidjfhvjsfsk
+            djfgdshfvlsjfvds;hkf jvdsghkfvsg;vfdsugh
+            fvhdsgfv;wsavfwhsgfvsgkjfvhj
           </div>
         </div>
         <div class="aboutMeRight">
@@ -67,7 +72,7 @@
               <li><span>Solidworks</span><br />3D modeling</li>
               <li>
                 <span>ABB RobotStudio and Matlab</span><br />Robot simulation
-                upto 4DOF
+                upto 4 DOF
               </li>
               <li><span>CNC</span><br />Machinary Automation</li>
             </ul>
@@ -79,7 +84,7 @@
                 Buisness development department for 2 months
               </li>
               <li>
-                <span>Electro Eco Mobility </span><samp>oct-nov'23</samp
+                <span>Electro Eco Mobility </span><samp>Oct-Nov'23</samp
                 ><br />Worked here for a month as intern in assembly, quality
                 check and service in this company
               </li>
@@ -105,6 +110,138 @@
         </div>
       </div>
     </div>
+
+    <!-- --------------------PROJECT-----------------------          -->
+    <!-- --------------------PROJECT-----------------------          -->
+      <div id="Projects">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="project-list">
+            <div>
+              <i class="fa-solid fa-compass-drafting"></i>
+              <h2>Complaint Mechanism</h2>
+              <p>
+                Gripper using Complaint Mechanism which is integrated with
+                Pneumatic training kit
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-robot"></i>
+              <h2>Robot Simulation</h2>
+              <p>
+                Simulation of 3 DOF of a JCB arm using matlab simulink. Weld and
+                then pickand place the object conveyor belt using ABB
+                Robotstudio
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-gamepad"></i>
+              <h2>VFX/Game Development</h2>
+              <p>
+                Made some effects and created few cinematic shots. Made a
+                multiplayer game for upto 20 players to play online
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----------Work------------------>
+      <div id="work">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="Images/work1)(.png" alt="" />
+              <div class="layer">
+                <h3>1st trial VFX</h3>
+                <p>
+                  whatever you in this is just a trial so dont take it seriously
+                </p>
+                <a href="https://youtu.be/uezkgrSJsrw"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="Images/work2_1.jpg" alt="" />
+              <div class="layer">
+                <h3>2nd trial VFX</h3>
+                <p>
+                  whatever you in this is just a trial so dont take it seriously
+                </p>
+                <a href="https://youtu.be/GDuopEIahJE"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="Images/Work3)(.png" alt="" />
+              <div class="layer">
+                <h3>3rd trial VFX</h3>
+                <p>
+                  whatever you in this is just a trial so dont take it seriously
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+
+      <!----------contact----------->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left col-md-6">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i> maihihu@gmra.com</p>
+              <p><i class="fa-solid fa-phone"></i> 0987654321</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/akshay-dh/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/_akshay_0o7/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+              <a href="Images/Akshay_DH_resume.pdf" download class="btn btn2"
+                >Download resume</a
+              >
+            </div>
+            <div class="contact-right col-md-6">
+              <form>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     <!-- ---------------- Conditions ------------------>
     <script src="js.js"></script>
   </body>
