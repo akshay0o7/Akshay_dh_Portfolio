@@ -1,13 +1,15 @@
 ﻿* {
   margin: 0;
   padding: 0;
-  font-family: " Poppins", "Sans Serif Collection";
+  font-family: "Poppins", "Sans Serif Collection";
   box-sizing: border-box;
 }
+
 body {
   background: #272626;
   color: #fff;
 }
+
 #header {
   width: 100%;
   height: 100vh;
@@ -15,6 +17,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .container {
   padding: 10px 10%;
 }
@@ -25,6 +28,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .logo {
   width: 140px;
 }
@@ -34,12 +38,14 @@ nav ul li {
   list-style: none;
   margin: 10px 20px;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   position: relative;
 }
+
 nav ul li a::after {
   content: "";
   width: 0;
@@ -49,55 +55,70 @@ nav ul li a::after {
   left: 0;
   bottom: -2px;
   transition: 0.35s;
+  display: block; /* Added to ensure border-radius works */
+  border-radius: 5px; /* Add border-radius to round the background */
 }
+
 nav ul li a:hover::after {
   width: 100%;
 }
+
 .header-text {
   margin-top: 15%;
   font-size: 30px;
 }
+
 .header-text h1 {
   font-size: 35px;
   margin-top: 15px;
 }
+
 .header-text p:hover {
   opacity: 0.8;
   transform: scale(1.1);
   transition: 1.5s;
 }
+
 .header-text h1:hover {
   opacity: 0.9;
   transform: scale(1.1);
   transition: 1.5s;
 }
+
 .header-text h1 span {
   color: #ff004f;
 }
+
 .header-text p span {
   color: #ff004f;
 }
+
 .header-text p samp {
   color: chocolate;
 }
+
 /* ---------------about---------*/
 #about {
   padding: 80px 0;
   color: #ababab;
 }
+
 .about-col-2 {
   height: 80%;
 }
+
 .tab-titles {
   display: flex;
 }
+
 .tab-links {
-  margin-right: 50px; /* distance between ek dusre */
+  margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
+
 .tab-links::after {
   content: "";
   width: 0;
@@ -108,39 +129,49 @@ nav ul li a:hover::after {
   bottom: -3px;
   transition: 0.35s;
 }
+
 .tab-links.active-link::after {
   width: 50%;
 }
+
 .tab-contents ul li {
   list-style: none;
 }
+
 .tab-contents ul li span {
   color: #c53753;
   font-size: 14px;
 }
+
 .tab-contents ul li samp {
   color: #d37b2e;
 }
+
 .tab-contents {
   display: none;
 }
+
 .tab-contents.active-tab {
   display: block;
 }
+
 .aboutMeData {
   display: flex;
   justify-content: space-between;
 }
+
 .sub-title {
   font-size: 25px;
   font-weight: 600;
   height: 100%;
 }
+
 .aboutMeLeft {
-    width: 50%;
-    padding-right: 50px;
+  width: 50%;
+  padding-right: 50px;
 }
+
 .aboutMeRight {
-    width: 50%;
-    padding-left: 50px;
+  width: 50%;
+  padding-left: 50px;
 }
