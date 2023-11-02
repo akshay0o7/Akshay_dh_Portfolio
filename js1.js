@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const workMoreSection = document.getElementById("work-more");
 
   seeMoreBtn.addEventListener("click", function() {
-    workMoreSection.style.display = "block";
+    workMoreSection.classList.add("visible"); // Add the 'visible' class
     seeMoreBtn.style.display = "none";
     seeLessBtn.style.display = "block";
 
@@ -13,10 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   seeLessBtn.addEventListener("click", function() {
-    workMoreSection.style.display = "none";
+    workMoreSection.classList.remove("visible"); // Remove the 'visible' class
     seeMoreBtn.style.display = "block";
     seeLessBtn.style.display = "none";
-
 
     // Scroll to the "Work" section
     document.getElementById("work").scrollIntoView({ behavior: "smooth" });
