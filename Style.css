@@ -296,6 +296,15 @@ nav ul li a:hover::after {
 .btn:hover{
     background: #ff004f;
 }
+.work-more {
+  display: none;
+}
+
+.work-more.visible {
+  display: block;
+}
+
+
 /*------------------contact------------*/
 .contact-left{
     flex-basis: 35%;
