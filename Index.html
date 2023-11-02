@@ -167,7 +167,7 @@
               <p>
                 whatever you in this is just a trial so dont take it seriously
               </p>
-              <a href="https://youtu.be/uezkgrSJsrw"
+              <a href="https://youtu.be/uezkgrSJsrw" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -179,7 +179,7 @@
               <p>
                 whatever you in this is just a trial so dont take it seriously
               </p>
-              <a href="https://youtu.be/GDuopEIahJE"
+              <a href="https://youtu.be/GDuopEIahJE" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -199,7 +199,7 @@
         </div>
         <div id="work-more">
           <div class="work-template">
-            <div class="work">
+            <div class="work" id="work-item-1">
               <img src="Images/work2)(.png" alt="" />
               <div class="layer">
                 <h3>4th trial VFX</h3>
@@ -237,7 +237,7 @@
             </div>
           </div>
           <div class="work-template" >
-            <div class="work">
+            <div class="work" id="work-item-2">
               <img src="Images/work2)(.png" alt="" />
               <div class="layer">
                 <h3>4th trial VFX</h3>
@@ -275,7 +275,7 @@
             </div>
           </div>
         </div>
-        <a href="#see-less-btn" class="btn" id="see-more-btn">See More</a>
+        <a href="#work-item" class="btn" id="see-more-btn">See More</a>
         <a href="#work" class="btn" id="see-less-btn" style="display: none"
           >See Less</a
         >
@@ -291,23 +291,23 @@
             <p><i class="fa-solid fa-envelope"></i> maihihu@gmra.com</p>
             <p><i class="fa-solid fa-phone"></i> 0987654321</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/akshay-dh/"
+              <a href="https://www.linkedin.com/in/akshay-dh/" target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
-              <a href="https://www.instagram.com/_akshay_0o7/"
+              <a href="https://www.instagram.com/_akshay_0o7/" target="_blank"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
-            <a href="Images/Akshay_DH_resume.pdf" download class="btn btn2"
+            <a href="Images/Akshay_DH_resume.pdf" target="_blank" download class="btn btn2"
               >Download resume</a
             >
           </div>
           <div class="contact-right col-md-6">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Your Email"
                 required
               />
@@ -318,6 +318,7 @@
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -326,5 +327,23 @@
     <!-- ---------------- Conditions ------------------>
     <script src="js.js"></script>
     <script src="js1.js"></script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOWj2zR9BI4UJUeDZyDKSTv9V_zXo3V1RX4vGPRbXI4bKhBUzndo3MIN78FA7-72pi/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+              msg.innerHTML = "Your message has been sent successfully"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.rest()
+            })
+            .catch((error) => console.error("Error!", error.message));
+        });
+</script>
   </body>
 </html>

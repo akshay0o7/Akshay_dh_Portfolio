@@ -387,11 +387,18 @@ form textarea {
   background: #ff001f;
   /* Change the background color on hover */
 }
-/*-------small screen       fk it------------*/
+
 nav .fa-solid {
   display: none;
 }
+#msg{
+    color: #61b752;
+    margin-top: -50px;
+    display: block;
+}
 
+
+/*-------small screen       fk it------------*/
 @media only screen and (max-width: 600px) {
   .header-text {
     margin-top: 100%;
