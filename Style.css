@@ -25,10 +25,14 @@ body {
 }
 
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  backdrop-filter: blur(10px); /* Adjust blur strength as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 1000; /* Ensure navbar is above other content */
+  width: 100%;
+  flex-direction: row-reverse
 }
 
 .logo {
