@@ -167,6 +167,11 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
+.aboutMeData {
+  display: flex;
+  justify-content: space-between;
+}
+
 .aboutMeLeft {
   width: 50%;
   padding-right: 50px;
