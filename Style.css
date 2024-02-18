@@ -80,7 +80,7 @@ nav ul li a:hover::after {
 }
 
 .header-text p:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(1.1);
   transition: 1.5s;
 }
@@ -161,11 +161,6 @@ nav ul li a:hover::after {
   display: block;
 }
 
-.aboutMeData {
-  display: flex;
-  justify-content: space-between;
-}
-
 .sub-title {
   font-size: 25px;
   font-weight: 600;
@@ -181,6 +176,26 @@ nav ul li a:hover::after {
   width: 50%;
   padding-left: 50px;
 }
+
+.subdivision {
+  width: 50%;
+  float: left;
+}
+
+.subdivision h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subdivision ul {
+  padding: 0;
+}
+
+.subdivision ul li {
+  margin-bottom: 20px;
+}
+
 /*-------------project-------------*/
 /*-------------project-------------*/
 #Projects {

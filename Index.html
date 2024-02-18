@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css" />
+    <title>Akshay Dharmaraj H</title>
     <script
       src="https://kit.fontawesome.com/ce7fe2870a.js"
       crossorigin="anonymous"
@@ -25,10 +26,15 @@
       </nav>
       <div class="container">
         <div class="header-text">
-          <p style="width: fit-content;"><span>Game developer</span>/<span>VFX Artist</span></p>
-          <h1 style="width: fit-content;">Hi, I am <span>Akshay D H</span></h1>
+          <p class="" style="width: fit-content" id="roleText">
+            <span>Game developer </span><span style="color: aliceblue">/</span
+            ><span> VFX Artist</span
+            ><span style="display: none">Mechatronics <k style="color: aliceblue">&</k> Automation</span>
+          </p>
+          <h1 style="width: fit-content">Hi, I am <span>Akshay D H</span></h1>
         </div>
       </div>
+      <script src="js.js"></script>
     </div>
     <!-- -------about-------->
     <div id="about">
@@ -53,31 +59,37 @@
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li>
-                <span>Unreal Engine</span><br />VFX artist and Level designing
-              </li>
-              <li>
-                <span>After Effects</span><br />Effects creation and animation
-              </li>
-              <li>
-                <span>Blender</span><br />Character/assets modeling and
-                animation
-              </li>
-              <li>
-                <span>DaVinci</span><br />Post production color gamet editing
-              </li>
-              <li>
-                <span>Maya and Houdini</span><br />Animation and effects
-                creation
-              </li>
-              <li><span>Solidworks</span><br />3D modeling</li>
-              <li>
-                <span>ABB RobotStudio and Matlab</span><br />Robot simulation
-                upto 4 DOF
-              </li>
-              <li><span>CNC</span><br />Machinary Automation</li>
-            </ul>
+            <div class="subdivision">
+              <h3>Game Dev</h3>
+              <ul>
+                <li>
+                  <span>Unreal Engine</span><br />VFX artist and Level designing
+                </li>
+                <li>
+                  <span>After Effects</span><br />Effects creation and animation
+                </li>
+                <li>
+                  <span>Blender</span><br />Character/assets modeling and animation
+                </li>
+              </ul>
+            </div>
+          
+            <div class="subdivision">
+              <h3>Normal</h3>
+              <ul>
+                <li>
+                  <span>DaVinci</span><br />Post-production color gamut editing
+                </li>
+                <li>
+                  <span>Maya and Houdini</span><br />Animation and effects creation
+                </li>
+                <li><span>Solidworks</span><br />3D modeling</li>
+                <li>
+                  <span>ABB RobotStudio and Matlab</span><br />Robot simulation up to 4 DOF
+                </li>
+                <li><span>CNC</span><br />Machinery Automation</li>
+              </ul>
+            </div>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
@@ -231,7 +243,7 @@
               </div>
             </div>
           </div>
-          <div class="work-template" >
+          <div class="work-template">
             <div class="work" id="work-item-2">
               <img src="Images/work2)(.png" alt="" />
               <div class="layer">
@@ -293,7 +305,11 @@
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
-            <a href="Images/Akshay_DH_resume.pdf" target="_blank" download class="btn btn2"
+            <a
+              href="Images/Akshay_DH_resume.pdf"
+              target="_blank"
+              download
+              class="btn btn2"
               >Download resume</a
             >
           </div>
@@ -323,22 +339,23 @@
     <script src="js.js"></script>
     <script src="js1.js"></script>
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOWj2zR9BI4UJUeDZyDKSTv9V_zXo3V1RX4vGPRbXI4bKhBUzndo3MIN78FA7-72pi/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzOWj2zR9BI4UJUeDZyDKSTv9V_zXo3V1RX4vGPRbXI4bKhBUzndo3MIN78FA7-72pi/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-  form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          fetch(scriptURL, { method: "POST", body: new FormData(form) })
-            .then((response) => {
-              msg.innerHTML = "Your message has been sent successfully"
-              setTimeout(function(){
-                msg.innerHTML = ""
-              },5000)
-              form.rest()
-            })
-            .catch((error) => console.error("Error!", error.message));
-        });
-</script>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message has been sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.rest();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
