@@ -343,8 +343,14 @@ nav ul li a:hover::after {
   font-size: 20px;
   font-weight: 300;
   border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
 }
 
+.certi-list div:hover {
+  background: #ff004f;
+  /* transform: translateY(-10px); */
+  transform: scale(1.05);
+}
 
 /*------------------contact------------*/
 .contact-left {
