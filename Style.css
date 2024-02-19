@@ -329,6 +329,23 @@ nav ul li a:hover::after {
   height: auto;
 }
 
+/* -----------------Certi--------------- */
+
+.certi-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.certi-list div {
+  background: #4e4a4a;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+
 /*------------------contact------------*/
 .contact-left {
   flex-basis: 35%;
