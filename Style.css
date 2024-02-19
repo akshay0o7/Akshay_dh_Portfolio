@@ -331,6 +331,9 @@ nav ul li a:hover::after {
 
 /* -----------------Certi--------------- */
 
+#certifications{
+  padding-top: 25px;
+}
 .certi-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -348,8 +351,8 @@ nav ul li a:hover::after {
 
 .certi-list div:hover {
   background: #ff004f;
-  /* transform: translateY(-10px); */
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  /* transform: scale(1.05); */
 }
 
 /*------------------contact------------*/
