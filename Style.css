@@ -244,6 +244,27 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
+.btn0-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn0 {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #d37b2e;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: azure;
+  transition: background 0.5s;
+}
+
+.btn0:hover {
+  background: #ff004f;
+}
+
 /*------------work-----------*/
 #work {
   padding: 50px 0;
@@ -346,6 +367,8 @@ nav ul li a:hover::after {
   font-size: 20px;
   font-weight: 300;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
   transition: background 0.5s, transform 0.5s;
 }
 
@@ -353,6 +376,20 @@ nav ul li a:hover::after {
   background: #ff004f;
   transform: translateY(-10px);
   /* transform: scale(1.05); */
+}
+
+.certi-list div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: azure;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.certi-list div:hover i {
+  opacity: 1; /* Show the content within <i> tags on hover */
 }
 
 /*------------------contact------------*/
