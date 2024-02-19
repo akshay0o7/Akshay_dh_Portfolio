@@ -25,10 +25,14 @@ body {
 }
 
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  backdrop-filter: blur(10px); /* Adjust blur strength as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  z-index: 1000; /* Ensure navbar is above other content */
+  width: 100%;
+  flex-direction: row-reverse
 }
 
 .logo {
@@ -76,7 +80,7 @@ nav ul li a:hover::after {
 }
 
 .header-text p:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(1.1);
   transition: 1.5s;
 }
@@ -142,7 +146,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
   color: #c53753;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .tab-contents ul li samp {
@@ -157,15 +161,15 @@ nav ul li a:hover::after {
   display: block;
 }
 
-.aboutMeData {
-  display: flex;
-  justify-content: space-between;
-}
-
 .sub-title {
   font-size: 25px;
   font-weight: 600;
   height: 100%;
+}
+
+.aboutMeData {
+  display: flex;
+  justify-content: space-between;
 }
 
 .aboutMeLeft {
@@ -177,6 +181,26 @@ nav ul li a:hover::after {
   width: 50%;
   padding-left: 50px;
 }
+
+.subdivision {
+  width: 50%;
+  float: left;
+}
+
+.subdivision h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subdivision ul {
+  padding: 0;
+}
+
+.subdivision ul li {
+  margin-bottom: 20px;
+}
+
 /*-------------project-------------*/
 /*-------------project-------------*/
 #Projects {
@@ -218,6 +242,27 @@ nav ul li a:hover::after {
 .project-list div:hover {
   background: #ff004f;
   transform: translateY(-10px);
+}
+
+.btn0-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn0 {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #d37b2e;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: azure;
+  transition: background 0.5s;
+}
+
+.btn0:hover {
+  background: #ff004f;
 }
 
 /*------------work-----------*/
@@ -303,6 +348,48 @@ nav ul li a:hover::after {
 #work-more.visible {
   display: block;
   height: auto;
+}
+
+/* -----------------Certi--------------- */
+
+#certifications{
+  padding-top: 25px;
+}
+.certi-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.certi-list div {
+  background: #4e4a4a;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.certi-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+  /* transform: scale(1.05); */
+}
+
+.certi-list div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: azure;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.certi-list div:hover i {
+  opacity: 1; /* Show the content within <i> tags on hover */
 }
 
 /*------------------contact------------*/

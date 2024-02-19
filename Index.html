@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css" />
+    <title>Akshay Dharmaraj H</title>
     <script
       src="https://kit.fontawesome.com/ce7fe2870a.js"
       crossorigin="anonymous"
@@ -12,28 +13,34 @@
   </head>
   <body>
     <div id="header">
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Projects">Project</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
       <div class="container">
-        <nav>
-          <img
-            src="Images/logo.png"
-            class="logo"
-            alt="Logo is supposed to be here"
-          />
-          <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Projects">Project</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
         <div class="header-text">
-          <p><span>Game developer</span>/<span>VFX Artist</span></p>
-          <h1>Hi, I am <span>Akshay D H</span></h1>
+          <p class="" style="width: fit-content" id="roleText">
+            <span>
+              Mechatornics <k style="color: aliceblue">&</k> Automation
+              <j style="color: aliceblue">Engineer</j></span
+            >
+            <span style="display: none"
+              >Game developer <v style="color: aliceblue">/</v> VFX
+              Artist</span
+            >
+          </p>
+          <h1 style="width: fit-content">Hi, I am <span>Akshay D H</span></h1>
         </div>
       </div>
+      <script src="js.js"></script>
     </div>
     <!-- -------about-------->
     <div id="about">
@@ -58,31 +65,42 @@
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li>
-                <span>Unreal Engine</span><br />VFX artist and Level designing
-              </li>
-              <li>
-                <span>After Effects</span><br />Effects creation and animation
-              </li>
-              <li>
-                <span>Blender</span><br />Character/assets modeling and
-                animation
-              </li>
-              <li>
-                <span>DaVinci</span><br />Post production color gamet editing
-              </li>
-              <li>
-                <span>Maya and Houdini</span><br />Animation and effects
-                creation
-              </li>
-              <li><span>Solidworks</span><br />3D modeling</li>
-              <li>
-                <span>ABB RobotStudio and Matlab</span><br />Robot simulation
-                upto 4 DOF
-              </li>
-              <li><span>CNC</span><br />Machinary Automation</li>
-            </ul>
+            <div class="subdivision">
+              <h3>Normal</h3>
+              <ul>
+                <li><span>Coding</span><br />Python, C++, Java</li>
+                <li><span>CAD/CAM</span><br />3D modeling and Simulation</li>
+                <li><span>Solidworks</span><br />3D modeling & designing</li>
+                <li>
+                  <span>ABB RobotStudio and Matlab</span><br />Robot simulation
+                  up to 4 DOF
+                </li>
+                <li><span>CNC</span><br />Automaing manufacturing process</li>
+                <li><span>Ansys</span><br />Analysis of the 3D modeling</li>
+              </ul>
+            </div>
+            <div class="subdivision">
+              <h3>Game Dev</h3>
+              <ul>
+                <li>
+                  <span>Blender</span><br />Character/assets modeling and
+                  animation
+                </li>
+                <li>
+                  <span>Unreal Engine</span><br />VFX artist and Level designing
+                </li>
+                <li>
+                  <span>After Effects</span><br />Effects creation and animation
+                </li>
+                <li>
+                  <span>DaVinci</span><br />Post-production color gamut editing
+                </li>
+                <li>
+                  <span>Maya and Houdini</span><br />Animation and effects
+                  creation
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="tab-contents" id="experience">
             <ul>
@@ -152,8 +170,41 @@
             <a href="#">Learn more</a>
           </div>
         </div>
+        <div id='project-more' style="display: none;">
+          <div class="project-list">
+              <div>
+                <i class="fa-solid fa-compass-drafting"></i>
+                <h2>4th project</h2>
+                <p>
+                  something something
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-compass-drafting"></i>
+                <h2>5th project</h2>
+                <p>
+                  something something
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-compass-drafting"></i>
+                <h2>6th project</h2>
+                <p>
+                  something something
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+          </div>
+        </div>
+        <a href="#project-more" class="btn0" id="see-more-btn0">See More</a>
+        <a href="#Projects" class="btn0" id="see-less-btn0" style="display: none"
+          >See Less</a
+        >
       </div>
     </div>
+    <script src="js1.js"></script>
 
     <!-----------Work------------------>
     <div id="work">
@@ -236,7 +287,7 @@
               </div>
             </div>
           </div>
-          <div class="work-template" >
+          <div class="work-template">
             <div class="work" id="work-item-2">
               <img src="Images/work2)(.png" alt="" />
               <div class="layer">
@@ -282,6 +333,70 @@
       </div>
     </div>
 
+    <!-- -------------Certis------------- -->
+
+    <div id="certifications">
+      <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certi-list">
+          <div id="certi1">
+            Certification 1
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi2">
+            Certification 2
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi3">
+            Certification 3
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi4">
+            Certification 4
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi5">
+            Certification 5
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi6">
+            Certification 6
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi7">
+            Certification 7
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi8">
+            Certification 8
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+          <div id="certi9">
+            Certification 9
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!----------contact----------->
     <div id="contact">
       <div class="container">
@@ -294,11 +409,18 @@
               <a href="https://www.linkedin.com/in/akshay-dh/" target="_blank"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
+              <a href="https://github.com/akshay0o7" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
               <a href="https://www.instagram.com/_akshay_0o7/" target="_blank"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
-            <a href="Images/Akshay_DH_resume.pdf" target="_blank" download class="btn btn2"
+            <a
+              href="Images/Akshay_DH_resume.pdf"
+              target="_blank"
+              download
+              class="btn btn2"
               >Download resume</a
             >
           </div>
@@ -328,22 +450,23 @@
     <script src="js.js"></script>
     <script src="js1.js"></script>
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzOWj2zR9BI4UJUeDZyDKSTv9V_zXo3V1RX4vGPRbXI4bKhBUzndo3MIN78FA7-72pi/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzOWj2zR9BI4UJUeDZyDKSTv9V_zXo3V1RX4vGPRbXI4bKhBUzndo3MIN78FA7-72pi/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-  form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          fetch(scriptURL, { method: "POST", body: new FormData(form) })
-            .then((response) => {
-              msg.innerHTML = "Your message has been sent successfully"
-              setTimeout(function(){
-                msg.innerHTML = ""
-              },5000)
-              form.rest()
-            })
-            .catch((error) => console.error("Error!", error.message));
-        });
-</script>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Your message has been sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.rest();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
