@@ -394,6 +394,15 @@ nav ul li a:hover::after {
   opacity: 1; /* Show the content within <i> tags on hover */
 }
 
+.certi-list div fi{
+  padding-left: 7.5px;
+  color: azure;
+  opacity: 0;
+}
+.certi-list div:hover fi {
+  opacity: 1; /* Show the content within <i> tags on hover */
+}
+
 /*------------------contact------------*/
 .contact-left {
   flex-basis: 35%;
