@@ -18,6 +18,8 @@ body {
   background-image: url("Images/back_railway.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -523,5 +525,78 @@ nav .fa-solid {
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 10px 2%;
+  }
+
+  .aboutMeLeft, .aboutMeRight {
+    width: 100%;
+    padding: 0;
+  }
+
+  .subdivision {
+    width: 100%;
+    float: none;
+  }
+
+  .subdivision ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-text {
+    margin-top: 50%;
+    font-size: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 25px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .work-template {
+    grid-template-columns: 1fr;
+  }
+
+  .certi-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left, .contact-right {
+    flex: 0 0 100%;
+    padding: 5px;
+  }
+
+  .btn, .btn0 {
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-text {
+    margin-top: 70%;
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  .btn, .btn0 {
+    padding: 8px 20px;
   }
 }
